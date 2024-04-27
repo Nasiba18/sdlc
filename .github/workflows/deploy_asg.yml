@@ -2,10 +2,10 @@ name: Deploy ASG
 
 
 on:
-  push:
-    paths:
-      - "asg/**"
-
+  workflow_run:
+  workflows: [build ami]
+   type:
+    -completed
 
 
 jobs:
@@ -44,4 +44,4 @@ jobs:
         working-directory: asg
         run: |
           echo "applying"
-          #terraform apply -auto-applove
+          #terraform destroy -auto-applove

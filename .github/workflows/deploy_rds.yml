@@ -46,4 +46,4 @@ jobs:
         working-directory: rds
         run: |
           echo "applying"
-          #terraform apply -auto-applove
+          #terraform destroy -auto-applove
