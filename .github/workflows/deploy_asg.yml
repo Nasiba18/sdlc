@@ -3,7 +3,8 @@ name: Deploy ASG
 
 on:
   push:
-    branches: [ "main" ]
+    paths:
+      - "asg/"
 
 
 
