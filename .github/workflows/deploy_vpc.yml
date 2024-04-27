@@ -3,7 +3,8 @@ name: Deploy VPC
 
 on:
   push:
-    branches: [ "main" ]
+    paths:
+      - "vpc/"
 
 
 
