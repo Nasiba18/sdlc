@@ -4,7 +4,7 @@ name: Deploy ASG
 on:
   push:
     paths:
-      - "asg/"
+      - "asg/**"
 
 
 
