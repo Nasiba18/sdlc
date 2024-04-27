@@ -2,9 +2,11 @@ name: Deploy RDS
 
 
 on:
-  push:
-    paths:
-      - "rds/**"
+  workflow_run:
+    workflows:
+      - "deploy vpc"
+    type:
+      - completed
 
 
 
